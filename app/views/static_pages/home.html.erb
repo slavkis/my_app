@@ -1,4 +1,9 @@
-<% name = current_user.present? ? current_user.email : 'Stranger' %>
+<div class="center">
+  <h1>It will be starting page of habits check application!</h1><br>
+  <h2>Later here will be main information about this app and small guide</h2><br>
 
-<h1>Welcome, <%= name %> </h1>
-<p>Find me in app/views/home/index.html.erb</p>
+  <% if current_user %>
+    <h3>Now you can visit your profile page:</h3>
+    <%= link_to "Your profile", current_user %>
+  <% end %>
+</div>

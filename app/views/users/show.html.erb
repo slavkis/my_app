@@ -1,0 +1,28 @@
+<div class="show_page">
+  <h3>Profile card: </h3>
+  <p>
+    <b>name: </b>
+    <%= @user.name %>
+  </p>
+  <p>
+    <b>avatar: </b><br>
+  <% if @user.avatar? %>
+    <p><%= image_tag @user.avatar.url, class: "avatar" %></p><br>
+  <% else %>
+    You have no avatar
+  <% end %>
+  <% if @user == current_user %>   
+    <p>
+      <b>
+        email:
+      </b>
+      <%= @user.email %>
+    </p>
+  <% end %>  
+  <% if @user == current_user %>
+    <p>
+      <b>edit your profile here: </b>
+    </p>
+    <%= link_to "Edit profile", edit_user_path(current_user) %>
+  <% end %>  
+</div>

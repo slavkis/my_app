@@ -14,3 +14,153 @@
  *= require_self
  */
  @import "bootstrap";
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!STYLES FOR HEADER !!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+ header {
+  box-shadow: 0 0 5px #191C1E ;
+}
+
+.navbar {
+    background-color: #3398FF;
+    border-bottom: 1px solid #191C1E;
+}
+
+ .navbar-nav {
+    margin-left: auto;
+    margin-right: 5em;
+    color:rgba(0, 0, 0, 0.55);
+    border: 1px solid #30373E;
+    border-radius: 5%;
+    box-shadow: 0 0 5px #191C1E ;
+    background-color: #5BAAFB ;
+ }
+ 
+.icon {
+    margin-left: 5em;
+    color:rgba(0, 0, 0, 0.55);
+    text-decoration: none;
+    padding: 7px;
+    border: 1px solid rgba(0, 0, 0, 0.55);
+    border-radius: 5%;
+    box-shadow: 0 0 5px #191C1E ;
+    background-color: #5BAAFB ;
+}
+a:hover {
+  color: #30373E}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!STYLES FOR LOG IN FORM !!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+h2 {
+  text-align: center;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!STYLES FOR SIGN UP FORM !!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.form {
+  width: 250px;
+  margin: 0 auto;
+  margin-top: 3em;
+  padding: 20px;
+
+  background-color: #F4F7F7 ;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #cccccc;
+}
+
+.actions {
+  margin-top: 10px;
+}
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!STYLES FOR PASSWORD RESET FORM !!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!STYLES FOR ALERTS !!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+
+#error_explanation {
+  font-size: 10px;
+  border: solid 2px red;
+  background-color: lightcoral;
+  border-radius: 5%;
+  padding: 10px;
+}
+
+#error_explanation h2 {
+  font-size: 15px;
+}
+
+p .alert {
+  border: 2px solid red;
+  background-color: lightcoral;
+
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!STYLES FOR FOOTER ВСЕ ХУЙНЯ ДАВАЙ ПО НОВОЙ!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+html,
+body {
+	height: 100%;
+}
+
+.content {
+	padding-bottom: 50px;
+}
+.footer {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+  margin-left: auto;
+  margin-right: 5em;
+  color:rgba(0, 0, 0, 0.55);
+  border: 1px solid #30373E;
+  box-shadow: 0 0 5px #191C1E ;
+  background-color: #5BAAFB ;
+}
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!STYLES FOR START PAGE !!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.center {
+  text-align: center;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!STYLES FOR USERS_SHOW PAGE !!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.show_page {
+  margin: 0 auto;
+  text-align: left;
+  width: 17em;
+  padding: 20px;
+  padding-bottom: 10px;
+  border: 3px solid #5BAAFB;
+  background-color: #D2FFFF;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #3BFEFF;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!STYLES FOR USERS_EDIT PAGE !!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.form-edit {
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 3em;
+  padding: 20px;
+
+  background-color: #F4F7F7 ;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #cccccc;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!  USER AVATAR !!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.avatar {
+  height: 100px;
+  width: 100px;
+  border: 5px solid #5BAAFB;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #3BFEFF;
+}

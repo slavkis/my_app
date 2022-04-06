@@ -1,0 +1,17 @@
+  <h2>edit your profile here:</h2>
+  <div class="form-edit">  
+    <%= form_for(current_user, method: :patch,  html: {multipart: true}) do |f|%>
+    <%= f.label :name, "name:" %><br>
+      <%= f.text_field :name %>
+      <%= f.label :avatar, "change profile photo:" %>
+      <%= f.file_field :avatar %>
+      <%= f.submit "Save", class: "btn btn-outline-secondary btn-sm actions" %>
+    <% end %>
+    <article>
+      Back to your profile:<br>
+      <%= link_to "Profile", current_user %>
+    </article>
+  </div>  
+  
+
+
