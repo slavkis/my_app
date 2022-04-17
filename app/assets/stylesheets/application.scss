@@ -131,7 +131,8 @@ body {
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!STYLES FOR USERS_SHOW PAGE !!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 .show_page {
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: 3em;
   text-align: left;
   width: 17em;
   padding: 20px;
@@ -139,7 +140,6 @@ body {
   border: 3px solid #5BAAFB;
   background-color: #D2FFFF;
   border-radius: 10px;
-  box-shadow: 0 0 10px #3BFEFF;
 }
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!STYLES FOR USERS_EDIT PAGE !!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
@@ -163,4 +163,14 @@ body {
   border: 5px solid #5BAAFB;
   border-radius: 50%;
   box-shadow: 0 0 10px #3BFEFF;
+}
+
+.habbit {
+  vertical-align: middle;
+  width: 200px;
+  height: 180px;
+  padding: 3em;
+  border: 1px solid black;
+  margin: 20px;
+  background-color: lightpink;
 }

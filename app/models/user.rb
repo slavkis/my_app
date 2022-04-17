@@ -4,11 +4,11 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
+  require 'carrierwave/orm/activerecord'       
+
   mount_uploader :avatar, AvatarUploader
+
+  has_many :habbits, dependent: :destroy
+  validates :name, presence: true
          
-  private
-  
-    def current_user?
-      @user == current_user
-    end    
 end

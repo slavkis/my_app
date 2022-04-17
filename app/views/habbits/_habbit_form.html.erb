@@ -1,0 +1,5 @@
+<%= form_for(Habbit.new, url: user_habbits_path(user_id: current_user.id), html: {multipart: true}) do |f| %>
+  <%= f.label :name, "name:" %>
+  <%= f.text_field :name %>
+  <%= f.submit "Save" %>
+<% end %>

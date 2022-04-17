@@ -1,11 +1,11 @@
   <h2>edit your profile here:</h2>
   <div class="form-edit">  
-    <%= form_for(current_user, method: :patch,  html: {multipart: true}) do |f|%>
-    <%= f.label :name, "name:" %><br>
-      <%= f.text_field :name %>
-      <%= f.label :avatar, "change profile photo:" %>
-      <%= f.file_field :avatar %>
-      <%= f.submit "Save", class: "btn btn-outline-secondary btn-sm actions" %>
+    <%= form_for(current_user, method: :patch,  html: {multipart: true}, data: {turbo: false}) do |f|%>
+      <b><%= f.label :name, "name:" %></b><br>
+      <p><%= f.text_field :name %></p>
+      <b><%= f.label :avatar, "change profile photo:" %></b>
+      <p><%= f.file_field :avatar %></p>
+      <p><%= f.submit "Save", class: "btn btn-outline-secondary btn-sm actions" %></p>
     <% end %>
     <article>
       Back to your profile:<br>

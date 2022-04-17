@@ -26,3 +26,8 @@
     <%= link_to "Edit profile", edit_user_path(current_user) %>
   <% end %>  
 </div>
+
+  <div class="habbits">
+    <h2>You can check your habbits here:</h2>
+    <p style="text-align: center"><%= link_to "Habbits", user_habbits_path(user_id: current_user.id) %></p>
+  </div>  

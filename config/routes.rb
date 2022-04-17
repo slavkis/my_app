@@ -6,5 +6,9 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
   root "static_pages#home"
-  resources :users, only: [:edit, :show, :update, :destroy]
+
+  resources :users, only: [:edit, :show, :update, :destroy] do 
+    resources :habbits, only: [:create, :index, :show]
+  end
+  delete "users/:id/habbits/:id", to: "habbits#destroy"
 end

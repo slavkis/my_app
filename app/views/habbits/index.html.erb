@@ -1,0 +1,20 @@
+<h2>Your habbits:</h2>
+<p class="center"><%= link_to "Back to profile", user_path(id: current_user.id) %></p>
+ <div class="center", style="margin-top: 3em" > 
+  <ol><% @habbits.each do |habbit| %>
+    <div class="habbit">
+      <li>
+        id: <%= habbit.id %>
+        <%= habbit.name %>
+        <%= link_to "Check it", user_habbit_path(id: habbit.id) %><br>
+        <%= button_to "Delete",user_habbit_path(id: habbit.id), method: :delete %>
+      </li>
+    </div>  
+  <% end %>
+  <ol>
+  <aside>
+    <h2>Create new habbit here:</h2>
+  </aside>
+  <%= render 'habbit_form' %>
+
+</div>  

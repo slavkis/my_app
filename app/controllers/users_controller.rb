@@ -1,13 +1,11 @@
 class UsersController < ApplicationController
 
   before_action :authenticate_user!, only: [:edit, :update, :destroy]
-
-  def new
-    @user = User.new
-  end
+  before_action :correct_user, only: :show
 
   def show
     @user = User.find(params[:id])
+    @habbit = current_user.habbits.build
   end
 
   def edit
@@ -15,11 +13,11 @@ class UsersController < ApplicationController
 
   def update
      if current_user.update(user_params)
-      flash[:success] = "Successfully updated!"
+      flash.notice = "Successfully updated!"             
       redirect_to current_user
     else
-      flash[:info] = "Something went wrong... Try again"
-      render 'edit' 
+      flash.now[:notice] = "Something went wrong... Try again"
+      render 'edit'
     end
   end 
 
@@ -27,6 +25,11 @@ class UsersController < ApplicationController
 
   def user_params
     params.require(:user).permit(:name, :email, :avatar)
+  end
+
+  def correct_user
+    @user = User.find_by(id: params[:id])
+    redirect_to current_user if @user.nil?
   end
 
 end
